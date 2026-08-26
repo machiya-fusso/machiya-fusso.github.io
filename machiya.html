@@ -1,0 +1,2113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO対策 -->
+<title>株式会社 マチヤ｜大阪・門真市のフッ素加工・表面処理</title>
+<meta name="description" content="大阪府門真市の株式会社マチヤは、フッ素樹脂コーティング・表面処理の専門業者です。試作・小ロットから量産まで、確かな技術で金属や機械部品への高品質なフッ素加工をご提供します。お見積り無料。">
+<meta name="robots" content="index, follow">
+
+<!-- Google Fonts: Noto Sans JP -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- Google Material Symbols -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<!-- FontAwesome (SNSアイコン用) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+/* ========================================
+   カラー・デザイン設定
+======================================== */
+:root {
+    /* 製造業・技術系サイト向けの落ち着いたブルー */
+    --google-blue: #315b78;
+    --google-blue-hover: #274b63;
+
+    --bg-color: #f8f9fa;
+    --surface: #ffffff;
+    --text-primary: #202124;
+    --text-secondary: #5f6368;
+    --border: #dadce0;
+
+    /* シャドウ */
+    --shadow-1: 0 1px 2px 0 rgba(60,64,67,0.3),
+                0 1px 3px 1px rgba(60,64,67,0.15);
+
+    --shadow-2: 0 1px 2px 0 rgba(60,64,67,0.3),
+                0 2px 6px 2px rgba(60,64,67,0.15);
+
+    --shadow-hover: 0 4px 6px 0 rgba(60,64,67,0.3),
+                    0 4px 12px 3px rgba(60,64,67,0.15);
+
+    /* 角丸 */
+    --radius-sm: 8px;
+    --radius-md: 24px;
+    --radius-pill: 100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--text-primary);
+    background: var(--bg-color);
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    font-size: 32px;
+    color: var(--google-blue);
+    margin-bottom: 16px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: var(--shadow-1);
+}
+
+/* Google風の4色ラインは削除 */
+
+.header-inner {
+    max-width: 1280px;
+    margin: auto;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    padding: 8px 12px;
+    border-radius: var(--radius-pill);
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background: #f1f3f4;
+    color: var(--text-primary);
+}
+
+
+/* 右上SNSアイコン */
+.header-sns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-left: 1px solid var(--border);
+    padding-left: 24px;
+}
+
+.header-sns a {
+    font-size: 24px;
+    color: var(--text-secondary);
+    transition: color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-sns a.instagram:hover {
+    color: #E1306C;
+    transform: translateY(-2px);
+}
+
+.header-sns a.facebook:hover {
+    color: #1877F2;
+    transform: translateY(-2px);
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    padding: 0;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+.hero {
+    margin-top: 68px;
+    padding: 80px 24px;
+    background: var(--surface);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 24px;
+    line-height: 1.3;
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin: 0 0 32px;
+    line-height: 1.8;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    background: var(--google-blue);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-1);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--google-blue-hover);
+    box-shadow: var(--shadow-hover);
+}
+
+
+/* ========================================
+   対応製品
+======================================== */
+.target-products {
+    background: #eef2f5;
+    border-bottom: 1px solid var(--border);
+    padding: 24px;
+}
+
+.target-products-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.target-products-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--google-blue);
+    letter-spacing: 0.08em;
+}
+
+.target-products-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.target-products-list span {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+    padding: 0 16px;
+    border-right: 1px solid #cbd5dc;
+}
+
+.target-products-list span:first-child {
+    padding-left: 0;
+}
+
+.target-products-list span:last-child {
+    border-right: none;
+}
+
+
+/* ========================================
+   COMMON / CARDS
+======================================== */
+section {
+    padding: 80px 24px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-title .en {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--google-blue);
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 32px;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-2);
+}
+
+
+/* ========================================
+   ABOUT
+======================================== */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-image {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    position: sticky;
+    top: 100px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    margin: 0 0 24px;
+    line-height: 1.4;
+    color: var(--google-blue);
+}
+
+.about-text > p {
+    color: var(--text-secondary);
+    margin: 0 0 16px;
+    font-size: 16px;
+}
+
+.about-features {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-features li {
+    background: #f8f9fa;
+    padding: 16px 24px;
+    border-radius: var(--radius-sm);
+    border-left: 4px solid var(--google-blue);
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.about-features li strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+
+/* ========================================
+   STRENGTH
+======================================== */
+.strengths {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.strength-number {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #e8f0fe;
+    color: var(--google-blue);
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.strength h3 {
+    margin: 0 0 12px;
+    font-size: 20px;
+}
+
+.strength p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+
+/* ========================================
+   SERVICE & WORKS
+======================================== */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.works-card {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.works-img {
+    width: 100%;
+    height: 220px;
+    background: #e8eef5;
+    overflow: hidden;
+}
+
+.works-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.works-card:hover .works-img img {
+    transform: scale(1.04);
+}
+
+.works-card-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.works-card-body h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.works-card-body p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+
+/* ========================================
+   FLOW
+======================================== */
+.flow-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.flow-step {
+    display: flex;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 24px;
+    align-items: center;
+    gap: 24px;
+}
+
+.flow-step-icon {
+    width: 48px;
+    height: 48px;
+    background: #e8f0fe;
+    color: var(--google-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.flow-step-content h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.flow-step-content p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+
+/* ========================================
+   TECHNOLOGY
+======================================== */
+.technology {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.tech-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+/* ========================================
+   EQUIPMENT
+======================================== */
+.equipment-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.equipment-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.equipment-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+}
+
+.equipment-img {
+    width: 100%;
+    height: 280px;
+    background: #e8eef5;
+    overflow: hidden;
+}
+
+.equipment-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.equipment-card-body {
+    padding: 16px 20px;
+    text-align: center;
+}
+
+.equipment-card-body h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.equipment-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+    border: 1px solid var(--border);
+}
+
+.equipment-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+}
+
+.equipment-table th {
+    background: #315b78;
+    color: #ffffff;
+    padding: 16px 24px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.equipment-table th:last-child {
+    text-align: right;
+}
+
+.equipment-table td {
+    padding: 16px 24px;
+    font-size: 15px;
+    color: var(--text-primary);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.equipment-table td:last-child {
+    text-align: right;
+    font-weight: 500;
+}
+
+.equipment-table tr:nth-child(odd) td {
+    background-color: #f1f5f9;
+}
+
+.equipment-table tr:nth-child(even) td {
+    background-color: #e8eef5;
+}
+
+.equipment-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ========================================
+   COMPANY
+======================================== */
+.company-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.company-table tr {
+    border-bottom: 1px solid var(--border);
+}
+
+.company-table tr:last-child {
+    border-bottom: none;
+}
+
+.company-table th,
+.company-table td {
+    padding: 24px;
+    text-align: left;
+}
+
+.company-table th {
+    width: 30%;
+    background: #f8f9fa;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+
+/* ========================================
+   FAQ
+======================================== */
+.faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 22px 24px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-primary);
+    background: #f8f9fa;
+    border-bottom: 1px solid var(--border);
+}
+
+.faq-answer {
+    padding: 20px 24px;
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+.contact {
+    text-align: center;
+}
+
+.contact-inner {
+    background: #e8f0fe;
+    border-radius: var(--radius-md);
+    padding: 64px 24px;
+    max-width: 900px;
+}
+
+.contact h3 {
+    font-size: 24px;
+    margin: 0 0 24px;
+}
+
+.contact-tel {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--google-blue);
+    margin: 0 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.contact-note {
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+}
+
+
+/* ========================================
+   FOOTER & SNS BUTTONS
+======================================== */
+.sns-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.sns-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: var(--radius-pill);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+    background: #f1f3f4;
+    border: 1px solid var(--border);
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+}
+
+.sns-button i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.sns-button.instagram:hover {
+    background: #E1306C;
+    color: #fff;
+    border-color: #E1306C;
+}
+
+.sns-button.facebook:hover {
+    background: #1877F2;
+    color: #fff;
+    border-color: #1877F2;
+}
+
+footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 48px 24px 24px;
+    color: var(--text-primary);
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.footer-company {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-company p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.footer-address {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .header-sns {
+        border-left: none;
+        padding-left: 0;
+        gap: 12px;
+    }
+
+    .header-sns a {
+        font-size: 22px;
+    }
+
+    .menu-button {
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 8px 0;
+        box-shadow: var(--shadow-1);
+    }
+
+    .mobile-nav.active {
+        display: block;
+    }
+
+    .mobile-nav a {
+        display: block;
+        padding: 16px 24px;
+        color: var(--text-primary);
+        font-weight: 500;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .mobile-nav a:last-child {
+        border-bottom: none;
+    }
+
+    .about-content,
+    .strengths,
+    .tech-list {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        position: static;
+    }
+
+    .company-table th,
+    .company-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .company-table th {
+        padding-bottom: 8px;
+        background: none;
+        border-bottom: none;
+    }
+
+    .company-table td {
+        padding-top: 0;
+    }
+
+    .target-products-inner {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .target-products-list span {
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .equipment-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .equipment-img {
+        height: 220px;
+    }
+
+    .target-products-list {
+        gap: 4px 0;
+    }
+
+    .target-products-list span {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 560px) {
+
+    .header-inner {
+        padding: 12px 16px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 56px 20px;
+    }
+
+    .contact-tel {
+        font-size: 28px;
+    }
+
+    .header-sns a {
+        font-size: 20px;
+    }
+
+    .header-right {
+        gap: 12px;
+    }
+
+    .target-products {
+        padding: 20px 16px;
+    }
+
+    .target-products-list {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .target-products-list span {
+        padding: 0;
+        border-right: none;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        padding: 18px 20px;
+    }
+
+    .faq-answer {
+        padding: 18px 20px;
+        font-size: 14px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- ========================================
+     HEADER
+======================================== -->
+<header>
+
+    <div class="header-inner">
+
+        <a href="#" class="logo">
+            株式会社 マチヤ
+            <span>フッ素加工・表面処理</span>
+        </a>
+
+        <div class="header-right">
+
+            <nav>
+                <a href="#about">会社紹介</a>
+                <a href="#service">加工内容</a>
+                <a href="#works">加工事例</a>
+                <a href="#flow">加工工程</a>
+                <a href="#equipment">主要設備</a>
+                <a href="#company">会社概要</a>
+            </nav>
+
+            <div class="header-sns">
+
+                <a href="https://www.instagram.com/fusso.machiya/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="instagram"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/fusso.machiya"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="facebook"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+            </div>
+
+            <button class="menu-button" aria-label="メニュー">
+                <span class="material-symbols-outlined" style="margin:0;">menu</span>
+            </button>
+
+        </div>
+    </div>
+
+
+    <div class="mobile-nav">
+
+        <a href="#about">会社紹介</a>
+        <a href="#service">加工内容</a>
+        <a href="#works">加工事例</a>
+        <a href="#flow">加工工程</a>
+        <a href="#equipment">主要設備</a>
+        <a href="#company">会社概要</a>
+        <a href="#faq">よくある質問</a>
+        <a href="#contact">お問い合わせ</a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- ========================================
+     HERO
+======================================== -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            フッ素加工・表面処理の<br>
+            プロフェッショナル
+        </h1>
+
+        <p>
+            高品質な表面処理技術でお客様のものづくりを支えます。<br>
+            小ロットから量産まで、柔軟に対応いたします。
+        </p>
+
+        <a href="#contact" class="button">
+            お問い合わせはこちら
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     対応製品
+======================================== -->
+<div class="target-products">
+
+    <div class="target-products-inner">
+
+        <div class="target-products-title">
+            対応製品
+        </div>
+
+        <div class="target-products-list">
+            <span>調理器具</span>
+            <span>金型</span>
+            <span>食品機器</span>
+            <span>工業部品</span>
+            <span>各種金属製品</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================================
+     ABOUT
+======================================== -->
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span class="en">ABOUT US</span>
+            <h2>私たちについて</h2>
+        </div>
+
+
+        <div class="about-content">
+
+            <div class="about-image">
+                <img src="aa.jpg"
+                     alt="株式会社マチヤのフッ素加工・表面処理">
+            </div>
+
+
+            <div class="about-text">
+
+                <h3>
+                    カドマイスター認定企業。<br>
+                    コーティング一筋25年の実績。
+                </h3>
+
+                <p>
+                    株式会社マチヤは、卓越した技術を持つと認められた門真市内の製造業者のみに与えられる「カドマイスター」に認定された企業です。
+                </p>
+
+                <p>
+                    食品機器や調理器具、工業機器などの新品はもちろん、使い古した部品に対して、フッ素・セラミックス塗料の焼き付け塗装（静電塗装、液体塗装）を専門に行う、コーティング一筋25年目を迎えた会社です。
+                </p>
+
+
+                <ul class="about-features">
+
+                    <li>
+                        <strong>多様なコーティング効果</strong>
+                        フライパンなどの付着防止効果を代表に、絶縁、帯電防止、腐食防止、耐摩耗性など、用途や使用環境に応じた様々な効果をもたらします。
+                    </li>
+
+                    <li>
+                        <strong>新品同様の再加工</strong>
+                        使い古した機器部品も、新たにコーティングし直すことで新品同様の性能へと再加工いたします。
+                    </li>
+
+                    <li>
+                        <strong>柔軟な短納期対応</strong>
+                        独自の生産体制と柔軟な対応力により、お客様のスケジュールに合わせた短納期を実現します。
+                    </li>
+
+                    <li>
+                        <strong>確かな実績</strong>
+                        大手食品メーカー様との長年にわたるお取引実績があり、安定した品質をご提供します。
+                    </li>
+
+                    <li>
+                        <strong>全国からのご依頼に対応</strong>
+                        宅配便での製品のお預かりにも対応しており、北海道から沖縄まで全国のお客様とのお取引実績があります。
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     STRENGTH
+======================================== -->
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+            <span class="en">STRENGTH</span>
+            <h2>当社の強み</h2>
+        </div>
+
+
+        <div class="strengths">
+
+            <div class="card strength">
+
+                <span class="material-symbols-outlined">
+                    history
+                </span>
+
+                <h3>豊富な加工経験</h3>
+
+                <p>
+                    長年培ってきた経験と技術を活かし、様々な製品への加工に対応します。
+                </p>
+
+            </div>
+
+
+            <div class="card strength">
+
+                <span class="material-symbols-outlined">
+                    architecture
+                </span>
+
+                <h3>柔軟な対応</h3>
+
+                <p>
+                    小ロット・試作品から量産品まで、お客様のご要望に合わせて対応します。
+                </p>
+
+            </div>
+
+
+            <div class="card strength">
+
+                <span class="material-symbols-outlined">
+                    verified
+                </span>
+
+                <h3>品質へのこだわり</h3>
+
+                <p>
+                    加工前から加工後まで丁寧に確認し、安定した品質の製品を提供します。
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     SERVICE
+======================================== -->
+<section id="service">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span class="en">SERVICE</span>
+            <h2>加工内容</h2>
+        </div>
+
+
+        <div class="service-grid">
+
+            <div class="card">
+
+                <span class="material-symbols-outlined">
+                    layers
+                </span>
+
+                <h3>フッ素樹脂コーティング</h3>
+
+                <p>
+                    非粘着性、耐薬品性、耐熱性など、フッ素樹脂の特性を活かした加工を行います。
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span class="material-symbols-outlined">
+                    format_paint
+                </span>
+
+                <h3>表面加工</h3>
+
+                <p>
+                    製品の用途や使用環境に合わせた各種表面処理・加工に対応します。
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span class="material-symbols-outlined">
+                    local_fire_department
+                </span>
+
+                <h3>焼付加工</h3>
+
+                <p>
+                    素材や使用条件に応じたフッ素樹脂の焼付加工を行います。
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span class="material-symbols-outlined">
+                    precision_manufacturing
+                </span>
+
+                <h3>試作・小ロット加工</h3>
+
+                <p>
+                    試作品や少量のご依頼にもできる限り柔軟に対応いたします。
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     WORKS
+======================================== -->
+<section id="works">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span class="en">WORKS</span>
+            <h2>加工事例</h2>
+        </div>
+
+
+        <div class="works-grid">
+
+
+            <!-- 1. スキレット -->
+            <div class="card works-card">
+
+                <div class="works-img">
+                    <img src="skillet.jpg" alt="スキレット">
+                </div>
+
+                <div class="works-card-body">
+
+                    <h3>スキレット</h3>
+
+                    <p>
+                        焦げ付きにくくお手入れを容易にするフッ素樹脂加工を施工。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 2. 金型 -->
+            <div class="card works-card">
+
+                <div class="works-img">
+                    <img src="金型.jpg" alt="金型">
+                </div>
+
+                <div class="works-card-body">
+
+                    <h3>金型</h3>
+
+                    <p>
+                        抜群の型離れ（離型性）を実現し、成形効率向上に貢献します。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 3. たい焼き機 -->
+            <div class="card works-card">
+
+                <div class="works-img">
+                    <img src="tai.jpg" alt="たい焼き機">
+                </div>
+
+                <div class="works-card-body">
+
+                    <h3>たい焼き機</h3>
+
+                    <p>
+                        生地の付着を防ぎ、業務用調理器具の作業効率を高めます。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 4. フライパン等 -->
+            <div class="card works-card">
+
+                <div class="works-img">
+                    <img src="fra.jpg" alt="フライパン等">
+                </div>
+
+                <div class="works-card-body">
+
+                    <h3>フライパン等</h3>
+
+                    <p>
+                        各種調理器具へのコーティング・塗り直し加工に対応。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 5. 玉子焼き機 -->
+            <div class="card works-card">
+
+                <div class="works-img">
+                    <img src="tamago.jpg" alt="玉子焼き機">
+                </div>
+
+                <div class="works-card-body">
+
+                    <h3>玉子焼き機</h3>
+
+                    <p>
+                        焦げ付きを防ぎ滑らかな仕上がりを支える高品質加工。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 6. 炊飯釜 -->
+            <div class="card works-card">
+
+                <div class="works-img">
+                    <img src="suihangama.jpg" alt="炊飯釜">
+                </div>
+
+                <div class="works-card-body">
+
+                    <h3>炊飯釜</h3>
+
+                    <p>
+                        大容量の業務用釜など、耐摩耗性に優れた塗装を実施。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 7. 鉄板 -->
+            <div class="card works-card">
+
+                <div class="works-img">
+                    <img src="teppan.jpg" alt="鉄板">
+                </div>
+
+                <div class="works-card-body">
+
+                    <h3>鉄板</h3>
+
+                    <p>
+                        汚れや焦げ付きを抑え、メンテナンス性を向上させます。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     FLOW
+======================================== -->
+<section id="flow">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span class="en">FLOW</span>
+            <h2>製品完成までの流れ</h2>
+        </div>
+
+
+        <div class="flow-list">
+
+
+            <div class="flow-step">
+
+                <div class="flow-step-icon">
+                    1
+                </div>
+
+                <div class="flow-step-content">
+
+                    <h3>お問い合わせ・お見積り</h3>
+
+                    <p>
+                        まずはお問い合わせいただきご要望等をお聞かせください。お見積りは無料です。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="flow-step">
+
+                <div class="flow-step-icon">
+                    2
+                </div>
+
+                <div class="flow-step-content">
+
+                    <h3>お預かり・受け入れ検査</h3>
+
+                    <p>
+                        お見積り内容にご納得いただきましたら、商品をお預かりして状態を確認します。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="flow-step">
+
+                <div class="flow-step-icon">
+                    3
+                </div>
+
+                <div class="flow-step-content">
+
+                    <h3>作業工程（空焼き・下地処理・ブラスト・塗装など）</h3>
+
+                    <p>
+                        ご依頼内容に合わせて、フッ素コーティングのための下地処理・ブラストから塗装、焼き入れまで、最適な工程で作業を行います。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="flow-step">
+
+                <div class="flow-step-icon">
+                    4
+                </div>
+
+                <div class="flow-step-content">
+
+                    <h3>出荷検査・納品</h3>
+
+                    <p>
+                        厳格なチェックを行い、納期までに確実に納品いたします。
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     TECHNOLOGY
+======================================== -->
+<section class="technology">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span class="en">TECHNOLOGY</span>
+            <h2>技術・対応について</h2>
+        </div>
+
+
+        <div class="tech-list">
+
+
+            <div class="card">
+
+                <h3>対応素材</h3>
+
+                <p>
+                    鉄・アルミ・ステンレスなどの金属製品を中心に対応しています。素材や製品形状、使用環境によって対応可否が異なりますので、まずはお気軽にご相談ください。
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>対応加工サイズ</h3>
+
+                <p>
+                    加工範囲は最小1mmから最大1600mmまで対応可能です。φ1100サイズの釜や1600mmのヒーター等の実績もございます。
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>用途</h3>
+
+                <p>
+                    食品・調理器具・工業製品など、様々な分野でご利用いただいています。
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>ご相談・お見積り</h3>
+
+                <p>
+                    「このサイズの製品に加工できる？」といったご相談からでも承ります。
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     EQUIPMENT
+======================================== -->
+<section id="equipment">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span class="en">EQUIPMENT</span>
+            <h2>主要設備</h2>
+        </div>
+
+
+        <!-- 設備画像ギャラリー -->
+        <div class="equipment-gallery">
+
+
+            <div class="equipment-card">
+
+                <div class="equipment-img">
+                    <img src="ro1.jpg" alt="焼付炉">
+                </div>
+
+                <div class="equipment-card-body">
+                    <h3>焼付炉</h3>
+                </div>
+
+            </div>
+
+
+            <div class="equipment-card">
+
+                <div class="equipment-img">
+                    <img src="ro2.jpg" alt="乾燥炉">
+                </div>
+
+                <div class="equipment-card-body">
+                    <h3>乾燥炉</h3>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- 設備一覧表 -->
+        <div class="equipment-wrapper">
+
+            <table class="equipment-table">
+
+                <thead>
+
+                    <tr>
+                        <th>機械名</th>
+                        <th>台数</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>ブラスト機</td>
+                        <td>1台</td>
+                    </tr>
+
+                    <tr>
+                        <td>ブラスト機集塵機</td>
+                        <td>2台</td>
+                    </tr>
+
+                    <tr>
+                        <td>塗装ブース</td>
+                        <td>1台</td>
+                    </tr>
+
+                    <tr>
+                        <td>乾燥炉</td>
+                        <td>1台</td>
+                    </tr>
+
+                    <tr>
+                        <td>焼付炉</td>
+                        <td>1台</td>
+                    </tr>
+
+                    <tr>
+                        <td>コンプレッサー</td>
+                        <td>2台</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     COMPANY
+======================================== -->
+<section id="company">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span class="en">COMPANY</span>
+            <h2>会社概要</h2>
+        </div>
+
+
+        <table class="company-table">
+
+            <tr>
+                <th>会社名</th>
+                <td>株式会社 マチヤ</td>
+            </tr>
+
+            <tr>
+                <th>所在地</th>
+                <td>
+                    〒571-0002 大阪府門真市岸和田2丁目21番3号
+                </td>
+            </tr>
+
+            <tr>
+                <th>電話番号</th>
+                <td>072-800-8410</td>
+            </tr>
+
+            <tr>
+                <th>FAX</th>
+                <td>072-800-8420</td>
+            </tr>
+
+            <tr>
+                <th>事業内容</th>
+                <td>
+                    フッ素樹脂コーティング<br>
+                    表面処理加工
+                </td>
+            </tr>
+
+            <tr>
+                <th>営業時間</th>
+                <td>8:00～17:00</td>
+            </tr>
+
+            <tr>
+                <th>定休日</th>
+                <td>土曜日・日曜日・祝日</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     FAQ
+======================================== -->
+<section id="faq">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span class="en">FAQ</span>
+            <h2>よくある質問</h2>
+        </div>
+
+
+        <div class="faq-list">
+
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+                    Q. 少量でも依頼できますか？
+                </div>
+
+                <div class="faq-answer">
+                    A. はい。試作品や小ロットの加工にもできる限り対応いたします。
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+                    Q. 遠方からでも依頼できますか？
+                </div>
+
+                <div class="faq-answer">
+                    A. はい。宅配便を利用した製品のお預かりにも対応しております。
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+                    Q. 見積りは無料ですか？
+                </div>
+
+                <div class="faq-answer">
+                    A. はい。加工内容を確認したうえで、お見積りをご案内いたします。
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+                    Q. 古い製品の再加工はできますか？
+                </div>
+
+                <div class="faq-answer">
+                    A. 製品の状態や材質などを確認したうえで対応いたします。まずはご相談ください。
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     CONTACT
+======================================== -->
+<section id="contact" class="contact">
+
+    <div class="container contact-inner">
+
+        <div class="section-title">
+            <span class="en">CONTACT</span>
+            <h2>お問い合わせ</h2>
+        </div>
+
+
+        <h3>
+            フッ素加工・表面処理についてのご相談がございましたら<br>
+            お気軽にお問い合わせください。
+        </h3>
+
+
+        <div class="contact-tel">
+
+            <span class="material-symbols-outlined"
+                  style="margin:0;">
+                call
+            </span>
+
+            072-800-8410
+
+        </div>
+
+
+        <p class="contact-note">
+            加工内容・数量・材質・サイズなどをお知らせいただければ、よりスムーズにご案内できます。
+        </p>
+
+
+        <a href="mailto:machiya-co@ark.ocn.ne.jp"
+           class="button">
+
+            <span class="material-symbols-outlined"
+                  style="color:white; margin:0 8px 0 0; font-size:20px;">
+                mail
+            </span>
+
+            メールでお問い合わせ
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ========================================
+     FOOTER
+======================================== -->
+<footer>
+
+    <div class="footer-inner">
+
+
+        <div class="footer-company">
+
+            株式会社 マチヤ
+
+            <p>
+                フッ素加工・表面処理
+            </p>
+
+
+            <div class="sns-links">
+
+                <a href="https://www.instagram.com/fusso.machiya/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="sns-button instagram"
+                   aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+
+                </a>
+
+
+                <a href="https://www.facebook.com/fusso.machiya"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="sns-button facebook"
+                   aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-address">
+
+            〒571-0002<br>
+            大阪府門真市岸和田2丁目21番3号<br>
+            TEL：072-800-8410<br>
+            FAX：072-800-8420
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 株式会社 マチヤ
+    </div>
+
+</footer>
+
+
+<!-- ========================================
+     SCRIPT
+======================================== -->
+<script>
+
+const menuButton = document.querySelector(".menu-button");
+const mobileNav = document.querySelector(".mobile-nav");
+const menuIcon = menuButton.querySelector(".material-symbols-outlined");
+
+
+menuButton.addEventListener("click", function() {
+
+    const isActive = mobileNav.classList.toggle("active");
+
+    menuIcon.textContent = isActive ? "close" : "menu";
+
+});
+
+
+document.querySelectorAll(".mobile-nav a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        mobileNav.classList.remove("active");
+
+        menuIcon.textContent = "menu";
+
+    });
+
+});
+
+</script>
+
+
+</body>
+</html>
