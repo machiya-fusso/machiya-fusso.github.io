@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://machiya-fusso.github.io/sitemap.xml
